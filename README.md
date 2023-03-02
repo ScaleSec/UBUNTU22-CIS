@@ -50,8 +50,4 @@ This role is designed that the end user should not have to edit the tasks themse
 
 ## Branches
 
-- **devel** - This is the default branch and the working development branch. Community pull requests will pull into this branch
-- **main** - This is the release branch
-- **reports** - This is a protected branch for our scoring reports, no code should ever go here
-- **gh-pages** - This is the github pages branch
-- **all other branches** - Individual community member branches
+- **devel** - This is the default branch.
