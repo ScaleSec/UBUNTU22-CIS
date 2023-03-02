@@ -84,33 +84,30 @@ skip_reboot: true
 ubtu22cis_rule_1_1_1_1: true
 ubtu22cis_rule_1_1_1_2: true
 ubtu22cis_rule_1_1_1_3: true
-ubtu22cis_rule_1_1_1_4: true
-ubtu22cis_rule_1_1_1_5: true
-ubtu22cis_rule_1_1_1_6: true
-ubtu22cis_rule_1_1_1_7: true
-ubtu22cis_rule_1_1_2: true
-ubtu22cis_rule_1_1_3: true
-ubtu22cis_rule_1_1_4: true
-ubtu22cis_rule_1_1_5: true
-ubtu22cis_rule_1_1_6: true
-ubtu22cis_rule_1_1_7: true
-ubtu22cis_rule_1_1_8: true
+ubtu22cis_rule_1_1_2_2: true
+ubtu22cis_rule_1_1_2_3: true
+ubtu22cis_rule_1_1_2_4: true
+ubtu22cis_rule_1_1_3_1: true
+ubtu22cis_rule_1_1_4_1: true
+ubtu22cis_rule_1_1_4_2: true
+ubtu22cis_rule_1_1_4_3: true
+ubtu22cis_rule_1_1_4_4: true
+ubtu22cis_rule_1_1_5_1: true
+ubtu22cis_rule_1_1_5_2: true
+ubtu22cis_rule_1_1_5_3: true
+ubtu22cis_rule_1_1_5_4: true
+ubtu22cis_rule_1_1_6_1: true
+ubtu22cis_rule_1_1_6_2: true
+ubtu22cis_rule_1_1_6_3: true
+ubtu22cis_rule_1_1_6_4: true
+ubtu22cis_rule_1_1_7_1: true
+ubtu22cis_rule_1_1_7_2: true
+ubtu22cis_rule_1_1_7_3: true
+ubtu22cis_rule_1_1_8_1: true
+ubtu22cis_rule_1_1_8_2: true
+ubtu22cis_rule_1_1_8_3: true
 ubtu22cis_rule_1_1_9: true
 ubtu22cis_rule_1_1_10: true
-ubtu22cis_rule_1_1_11: true
-ubtu22cis_rule_1_1_12: true
-ubtu22cis_rule_1_1_13: true
-ubtu22cis_rule_1_1_14: true
-ubtu22cis_rule_1_1_15: true
-ubtu22cis_rule_1_1_16: true
-ubtu22cis_rule_1_1_17: true
-ubtu22cis_rule_1_1_18: true
-ubtu22cis_rule_1_1_19: true
-ubtu22cis_rule_1_1_20: true
-ubtu22cis_rule_1_1_21: true
-ubtu22cis_rule_1_1_22: true
-ubtu22cis_rule_1_1_23: true
-ubtu22cis_rule_1_1_24: true
 ubtu22cis_rule_1_2_1: true
 ubtu22cis_rule_1_2_2: true
 ubtu22cis_rule_1_3_1: true
@@ -134,9 +131,6 @@ ubtu22cis_rule_1_7_4: true
 ubtu22cis_rule_1_7_5: true
 ubtu22cis_rule_1_7_6: true
 ubtu22cis_rule_1_8_1: true
-ubtu22cis_rule_1_8_2: true
-ubtu22cis_rule_1_8_3: true
-ubtu22cis_rule_1_8_4: true
 ubtu22cis_rule_1_9: true
 
 # Section 2 Fixes
@@ -241,15 +235,23 @@ ubtu22cis_rule_4_1_14: true
 ubtu22cis_rule_4_1_15: true
 ubtu22cis_rule_4_1_16: true
 ubtu22cis_rule_4_1_17: true
-ubtu22cis_rule_4_2_1_1: true
-ubtu22cis_rule_4_2_1_2: true
+#ubtu22cis_rule_4_2_1_1_1: true
+#ubtu22cis_rule_4_2_1_1_2: true
+#ubtu22cis_rule_4_2_1_1_3: true
+#ubtu22cis_rule_4_2_1_1_4: true
+#ubtu22cis_rule_4_2_1_2: true
 ubtu22cis_rule_4_2_1_3: true
 ubtu22cis_rule_4_2_1_4: true
-ubtu22cis_rule_4_2_1_5: true
-ubtu22cis_rule_4_2_1_6: true
+#ubtu22cis_rule_4_2_1_5: true
+#ubtu22cis_rule_4_2_1_6: true
+#ubtu22cis_rule_4_2_1_7: true
 ubtu22cis_rule_4_2_2_1: true
 ubtu22cis_rule_4_2_2_2: true
 ubtu22cis_rule_4_2_2_3: true
+ubtu22cis_rule_4_2_2_4: true
+ubtu22cis_rule_4_2_2_5: true
+ubtu22cis_rule_4_2_2_6: true
+ubtu22cis_rule_4_2_2_7: true
 ubtu22cis_rule_4_2_3: true
 ubtu22cis_rule_4_3: true
 ubtu22cis_rule_4_4: true
@@ -269,32 +271,37 @@ ubtu22cis_rule_5_1_9: true
 ubtu22cis_rule_5_2_1: true
 ubtu22cis_rule_5_2_2: true
 ubtu22cis_rule_5_2_3: true
+ubtu22cis_rule_5_2_4: true
+ubtu22cis_rule_5_2_5: true
+ubtu22cis_rule_5_2_6: true
+ubtu22cis_rule_5_2_7: true
+ubtu22cis_rule_5_2_8: true
+ubtu22cis_rule_5_2_9: true
+ubtu22cis_rule_5_2_10: true
+ubtu22cis_rule_5_2_11: true
+ubtu22cis_rule_5_2_12: true
+ubtu22cis_rule_5_2_13: true
+ubtu22cis_rule_5_2_14: true
+ubtu22cis_rule_5_2_15: true
+ubtu22cis_rule_5_2_16: true
+ubtu22cis_rule_5_2_17: true
+ubtu22cis_rule_5_2_18: true
+ubtu22cis_rule_5_2_19: true
+ubtu22cis_rule_5_2_20: true
+ubtu22cis_rule_5_2_21: true
+ubtu22cis_rule_5_2_22: true
 ubtu22cis_rule_5_3_1: true
 ubtu22cis_rule_5_3_2: true
 ubtu22cis_rule_5_3_3: true
-ubtu22cis_rule_5_3_4: true
-ubtu22cis_rule_5_3_5: true
-ubtu22cis_rule_5_3_6: true
+# ubtu22cis_rule_5_3_4: true
+# ubtu22cis_rule_5_3_5: true
+# ubtu22cis_rule_5_3_6: true
 ubtu22cis_rule_5_3_7: true
-ubtu22cis_rule_5_3_8: true
-ubtu22cis_rule_5_3_9: true
-ubtu22cis_rule_5_3_10: true
-ubtu22cis_rule_5_3_11: true
-ubtu22cis_rule_5_3_12: true
-ubtu22cis_rule_5_3_13: true
-ubtu22cis_rule_5_3_14: true
-ubtu22cis_rule_5_3_15: true
-ubtu22cis_rule_5_3_16: true
-ubtu22cis_rule_5_3_17: true
-ubtu22cis_rule_5_3_18: true
-ubtu22cis_rule_5_3_19: true
-ubtu22cis_rule_5_3_20: true
-ubtu22cis_rule_5_3_21: true
-ubtu22cis_rule_5_3_22: true
 ubtu22cis_rule_5_4_1: true
 ubtu22cis_rule_5_4_2: true
 ubtu22cis_rule_5_4_3: true
 ubtu22cis_rule_5_4_4: true
+# ubtu22cis_rule_5_4_5: true
 ubtu22cis_rule_5_5_1_1: true
 ubtu22cis_rule_5_5_1_2: true
 ubtu22cis_rule_5_5_1_3: true
@@ -305,7 +312,6 @@ ubtu22cis_rule_5_5_3: true
 ubtu22cis_rule_5_5_4: true
 ubtu22cis_rule_5_5_5: true
 ubtu22cis_rule_5_6: true
-ubtu22cis_rule_5_7: true
 
 # Section 6 Fixes
 # Section is Systme Maintenance (System File Permissions and User and Group Settings)
@@ -374,22 +380,42 @@ ubtu22cis_is_router: false
 ubtu22cis_ipv4_required: true
 
 # IPv6 requirement toggle
-ubtu22cis_ipv6_required: false
+ubtu22cis_ipv6_required: true
 
 # Other system wide variables
 # ubtu22cis_desktop_required is the toggle for requiring desktop environments. True means you use a desktop and will not disable/remove needed items to run a desktop (not recommented for servers)
 # false means you do not require a desktop
-ubtu22cis_desktop_required: false
+ubtu22cis_remove_gdm3: true
+ubtu22cis_remove_xwindows: true
 
-# Section 1 Control Variables
+
+# Sxwindowson 1 Control Variables
 
 # Control 1.1.12/1.1.13/1.1.14
 # These are the settings for the /var/tmp mount
 # To conform to CIS control 1.1.12 nodev needs to be present in opts
 # To conform to CIS control 1.1.13 nosuid needs to be present in opts
 # To conform to CIS control 1.1.14 noexec needs to be present in opts
+ubtu22cis_home:
+    source: /home
+    fstype: none
+    opts: "defaults,nodev,nosuid,bind"
+    enabled: false
+
 ubtu22cis_vartmp:
     source: /tmp
+    fstype: none
+    opts: "defaults,nodev,nosuid,noexec,bind"
+    enabled: false
+
+ubtu22cis_varlog:
+    source: /var/log
+    fstype: none
+    opts: "defaults,nodev,nosuid,noexec,bind"
+    enabled: false
+
+ubtu22cis_varlogaudit:
+    source: /var/log
     fstype: none
     opts: "defaults,nodev,nosuid,noexec,bind"
     enabled: false
