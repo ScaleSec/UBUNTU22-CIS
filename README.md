@@ -50,4 +50,4 @@ This role is designed that the end user should not have to edit the tasks themse
 
 ## Branches
 
-- **devel** - This is the default branch.
+- **main** - This is the default branch.
