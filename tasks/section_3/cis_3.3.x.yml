@@ -165,18 +165,53 @@
       - icmp
       - sysctl
 
-- name: "3.3.7 | PATCH | Ensure Reverse Path Filtering is enabled"
-  sysctl:
-      name: "{{ item }}"
-      value: '1'
-      sysctl_set: yes
-      state: present
-      reload: yes
-      ignoreerrors: yes
-  with_items:
-      - net.ipv4.conf.all.rp_filter
-      - net.ipv4.conf.default.rp_filter
-  notify: sysctl flush ipv4 route table
+- name: "3.3.7 | PATCH-BLOCK | Ensure Reverse Path Filtering is enabled"
+  block:
+      - name: "3.3.7 | PATCH-SYSCTL.D | Ensure Reverse Path Filtering is enabled - /etc"
+        sysctl:
+            name: "{{ item }}"
+            value: '1'
+            state: present
+            ignoreerrors: yes
+            sysctl_file: "/etc/sysctl.d/10-network-security.conf"
+            reload: false
+        with_items:
+            - net.ipv4.conf.all.rp_filter
+            - net.ipv4.conf.default.rp_filter
+      - name: "3.3.7 | PATCH-SYSCTL.D | Ensure Reverse Path Filtering is enabled - /usr/lib/sysctl.d"
+        sysctl:
+            name: "{{ item }}"
+            value: '1'
+            state: present
+            ignoreerrors: yes
+            sysctl_file: "/usr/lib/sysctl.d/50-default.conf"
+            reload: false
+        with_items:
+            - net.ipv4.conf.all.rp_filter
+            - net.ipv4.conf.default.rp_filter
+      - name: "3.3.7 | PATCH-SYSCTL.D | Ensure Reverse Path Filtering is enabled - /lib/sysctl.d"
+        sysctl:
+            name: "{{ item }}"
+            value: '1'
+            state: present
+            ignoreerrors: yes
+            sysctl_file: "/lib/sysctl.d/50-default.conf"
+            reload: false
+        with_items:
+            - net.ipv4.conf.all.rp_filter
+            - net.ipv4.conf.default.rp_filter
+      - name: "3.3.7 | PATCH-SYSCTL | Ensure Reverse Path Filtering is enabled"
+        sysctl:
+            name: "{{ item }}"
+            value: '1'
+            sysctl_set: yes
+            state: present
+            reload: yes
+            ignoreerrors: yes
+        with_items:
+            - net.ipv4.conf.all.rp_filter
+            - net.ipv4.conf.default.rp_filter
+        notify: sysctl flush ipv4 route table
   when:
       - ubtu22cis_rule_3_3_7
   tags:
