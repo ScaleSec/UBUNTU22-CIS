@@ -11,7 +11,7 @@
       - name: "4.2.3 | PATCH | Ensure all logfiles have appropriate permissions and ownership | Apply permissions and ownership"
         file:
             path: "{{ item.path }}"
-            mode: g-w,o-rwx
+            mode: g-w,u-rwx
         with_items:
             - "{{ ubtu22cis_4_2_3_logfiles.files }}"
         loop_control:
