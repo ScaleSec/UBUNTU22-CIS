@@ -255,22 +255,20 @@
             line: 'session optional                        pam_umask.so'
             insertbefore: '^# end of pam-auth-update config'
         when: ubtu22cis_5_5_4_umask_pam_status.stdout | length == 0
-
-      - name: "5.5.4 | PATCH | Ensure default user umask is 027 or more restrictive"
-        lineinfile:
-            path: "{{ item }}"
-            regexp: '^umask '
-            line: "umask {{ ubtu22cis_bash_umask }}"
-        with_items:
-            - /etc/bash.bashrc
-            - /etc/profile
-            - /etc/login.defs
-
       - name: "5.5.4 | PATCH | Ensure default user umask is 027 or more restrictive"
         lineinfile:
             path: /etc/login.defs
             regexp: '^USERGROUPS_ENAB'
             line: USERGROUPS_ENAB no
+      - name: "5.5.4 | PATCH | Ensure default user umask is 027 or more restrictive"
+        lineinfile:
+            path: "{{ item }}"
+            regexp: '^UMASK\s+\d{3}'
+            line: "UMASK {{ ubtu22cis_bash_umask }}"
+        with_items:
+            # - /etc/bash.bashrc
+            # - /etc/profile
+            - /etc/login.defs
   when:
       - ubtu22cis_rule_5_5_4
   tags:
