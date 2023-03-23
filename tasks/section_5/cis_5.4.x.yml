@@ -164,31 +164,35 @@
       - rule_5.4.3
       - pamd
 
-- name: "5.4.4 | PATCH | Ensure password hashing algorithm is SHA-512"
-  block:
-      - name: "5.4.4 | AUDIT | Ensure password hashing algorithm is SHA-512 | Confirm pam_unix.so"
-        shell: grep -E '^\s*password\s+(\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512\s*(\S+\s*)*(\s+#.*)?$' /etc/pam.d/common-password
-        changed_when: false
-        failed_when: false
-        check_mode: false
-        register: ubtu22cis_5_4_4_pam_unix_state
+- name: "5.4.4 | PATCH | Ensure password hashing algorithm is up to date with the latest standards"
+  lineinfile:
+      path: /etc/login.defs
+      regexp: '^ENCRYPT_METHOD\s+SHA\d{3}'
+      line: "ENCRYPT_METHOD yescrypt"
+  # block:
+  #     - name: "5.4.4 | AUDIT | Ensure password hashing algorithm is SHA-512 | Confirm pam_unix.so"
+  #       shell: grep -E '^\s*password\s+(\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512\s*(\S+\s*)*(\s+#.*)?$' /etc/pam.d/common-password
+  #       changed_when: false
+  #       failed_when: false
+  #       check_mode: false
+  #       register: ubtu22cis_5_4_4_pam_unix_state
 
-      - name: "5.4.4 | PATCH | Ensure password hashing algorithm is SHA-512 | Set hashing if pam_unix.so exists"
-        pamd:
-            name: common-password
-            type: password
-            control: '[success=1 default=ignore]'
-            module_path: pam_unix.so
-            module_arguments: sha512
-            state: args_present
-        when: ubtu22cis_5_4_4_pam_unix_state.stdout | length > 0
+  #     - name: "5.4.4 | PATCH | Ensure password hashing algorithm is SHA-512 | Set hashing if pam_unix.so exists"
+  #       pamd:
+  #           name: common-password
+  #           type: password
+  #           control: '[success=1 default=ignore]'
+  #           module_path: pam_unix.so
+  #           module_arguments: sha512
+  #           state: args_present
+  #       when: ubtu22cis_5_4_4_pam_unix_state.stdout | length > 0
 
-      - name: "5.4.4 | PATCH | Ensure password hashing algorithm is SHA-512 | Set hashing if pam_unix.so does not exist"
-        lineinfile:
-            path: /etc/pam.d/common-password
-            line: 'password        [success=1 default=ignore]      pam_unix.so sha512'
-            insertafter: '^# end of pam-auth-update config'
-        when: ubtu22cis_5_4_4_pam_unix_state.stdout | length == 0
+  #     - name: "5.4.4 | PATCH | Ensure password hashing algorithm is SHA-512 | Set hashing if pam_unix.so does not exist"
+  #       lineinfile:
+  #           path: /etc/pam.d/common-password
+  #           line: 'password        [success=1 default=ignore]      pam_unix.so sha512'
+  #           insertafter: '^# end of pam-auth-update config'
+  #       when: ubtu22cis_5_4_4_pam_unix_state.stdout | length == 0
   when:
       - ubtu22cis_rule_5_4_4
   tags:
