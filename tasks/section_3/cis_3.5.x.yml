@@ -740,7 +740,7 @@
       - ubtu22cis_rule_3_5_3_3_1
       - ubtu22cis_firewall_package == "iptables"
       - ubtu22cis_ipv6_required
-      - not ubtu22cis_ipv4_required
+     #- not ubtu22cis_ipv4_required
   tags:
       - level1-server
       - level1-workstation
@@ -781,7 +781,7 @@
       - ubtu22cis_rule_3_5_3_3_2
       - ubtu22cis_firewall_package == "iptables"
       - ubtu22cis_ipv6_required
-      - not ubtu22cis_ipv4_required
+      #- not ubtu22cis_ipv4_required
   tags:
       - level1-server
       - level1-workstation
@@ -811,7 +811,7 @@
       - ubtu22cis_rule_3_5_3_3_3
       - ubtu22cis_firewall_package == "iptables"
       - ubtu22cis_ipv6_required
-      - not ubtu22cis_ipv4_required
+      #- not ubtu22cis_ipv4_required
   tags:
       - level1-server
       - level1-workstation
@@ -854,7 +854,7 @@
       - ubtu22cis_rule_3_5_3_3_4
       - ubtu22cis_firewall_package == "iptables"
       - ubtu22cis_ipv6_required
-      - not ubtu22cis_ipv4_required
+      #- not ubtu22cis_ipv4_required
   tags:
       - level1-server
       - level1-workstation
